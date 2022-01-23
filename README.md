@@ -1,7 +1,7 @@
 # The-Big-Tipper
-First app project, following a freeCodeCamp tutorial and adding custom features. 
+First android app project, following a freeCodeCamp tutorial and adding custom features. 
 
-Created wtih Android Studio and Kotlin, a Java inspired statically typed programming language.
+Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically typed programming language.
 
 <br> 
 
