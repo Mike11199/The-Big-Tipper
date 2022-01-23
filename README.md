@@ -9,4 +9,6 @@ Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically 
 
 <br> 
 
+To-do:  Change smiley face from happy, neutral, or angry depending on the tip amount (not in tutorial).
+
 <img src="https://user-images.githubusercontent.com/91037796/150669402-e63df900-d6b4-466e-b528-73d3840f7566.gif" width="540" height="1080"/>
