@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!--    views on the left side-->
+    <TextView
+        android:id="@+id/Base_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:text="Base"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Percent_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/Base_Label"
+        app:layout_constraintTop_toBottomOf="@+id/Base_Label"
+        tools:text="24%" />
+
+    <TextView
+        android:id="@+id/Tip_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Tip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@id/Base_Label"
+        app:layout_constraintTop_toBottomOf="@+id/Percent_Label" />
+
+    <TextView
+        android:id="@+id/Total_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Total"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toEndOf="@id/Base_Label"
+        app:layout_constraintTop_toBottomOf="@+id/Tip_Label" />
+
+
+<!--    views on the right side-->
+    <EditText
+        android:id="@+id/Base_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="8"
+        android:hint="Bill Amount"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Base_Label"
+        app:layout_constraintStart_toEndOf="@+id/Base_Label"
+        app:layout_constraintTop_toTopOf="@+id/Base_Label" />
+
+    <SeekBar
+        android:id="@+id/Tip_Seek_Bar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:max="30"
+        app:layout_constraintBottom_toBottomOf="@+id/Percent_Label"
+        app:layout_constraintStart_toStartOf="@+id/Base_Amount"
+        app:layout_constraintTop_toTopOf="@+id/Percent_Label" />
+
+    <TextView
+        android:id="@+id/Tip_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/Tip_Label"
+        app:layout_constraintStart_toStartOf="@+id/Tip_Seek_Bar"
+        app:layout_constraintTop_toTopOf="@+id/Tip_Label"
+        tools:text="19.96" />
+
+    <TextView
+        android:id="@+id/Total_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/Total_Label"
+        app:layout_constraintStart_toStartOf="@+id/Tip_Amount"
+        app:layout_constraintTop_toTopOf="@+id/Total_Label"
+        tools:text="103.11" />
+
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginBottom="32dp"
+        android:text="Made by Michael Iwanek (following freeCodeCamp.org tutorial)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/FaceMood"
+        android:layout_width="184dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Total_Amount"
+        app:srcCompat="@drawable/happy_face" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
