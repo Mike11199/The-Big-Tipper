@@ -6,6 +6,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
 
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var Percent_Label: TextView
     private lateinit var Tip_Amount: TextView
     private lateinit var Total_Amount: TextView
+    private lateinit var Mood_Image: ImageView
 
 
 
@@ -30,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         Percent_Label=findViewById(R.id.Percent_Label)
         Tip_Amount=findViewById(R.id.Tip_Amount)
         Total_Amount=findViewById(R.id.Total_Amount)
+        Mood_Image=findViewById(R.id.FaceMood)
 
         Tip_Seek_Bar.progress= INITIAL_TIP_PERCENT
         Percent_Label.text = "$INITIAL_TIP_PERCENT%"
@@ -42,6 +45,7 @@ class MainActivity : AppCompatActivity() {
                Log.i(TAG,"onProgressChanged $progress")
                 Percent_Label.text= "$progress%"
                 computeTipAndTotal()
+                Update_Mood()
 //                Every time progress is changed on the seekbar you print out the current value shown in logcat
             }
 
@@ -60,6 +64,7 @@ class MainActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
                 Log.i(TAG, "afterTextChanged $s")
                 computeTipAndTotal()
+                Update_Mood()
             }
 
         })
@@ -85,5 +90,24 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+    private fun Update_Mood() {
+        //1. Get the value of the tip percent
+        val tipPercent = Tip_Seek_Bar.progress
+        //3. Update the image (R.java is an auto-generated file which contains resource IDs)
+        if (tipPercent<5)
+            {
+            Mood_Image.setImageResource(R.drawable.mad)
+            }
+        else if (tipPercent<10)
+            {
+            Mood_Image.setImageResource(R.drawable.neutral)
+            }
+        else
+            {
+            Mood_Image.setImageResource(R.drawable.happy_face)
+                        }
+                             }
+    //app:srcCompat="@drawable/happy_face"
 
 }

@@ -104,14 +104,24 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </RelativeLayout>
+
     <ImageView
         android:id="@+id/FaceMood"
         android:layout_width="184dp"
         android:layout_height="240dp"
         android:layout_marginTop="90dp"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvFooter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Total_Amount"
-        app:srcCompat="@drawable/happy_face" />
+        app:layout_constraintVertical_bias="0.277"
+        app:srcCompat="@drawable/neutral" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
