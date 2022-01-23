@@ -95,18 +95,25 @@ class MainActivity : AppCompatActivity() {
         //1. Get the value of the tip percent
         val tipPercent = Tip_Seek_Bar.progress
         //3. Update the image (R.java is an auto-generated file which contains resource IDs)
-        if (tipPercent<5)
+        if (tipPercent<1)
             {
-            Mood_Image.setImageResource(R.drawable.mad)
-
+            Mood_Image.setImageResource(R.drawable.madface)
+            }
+        else if (tipPercent<5)
+            {
+            Mood_Image.setImageResource(R.drawable.slightlyfrowny)
             }
         else if (tipPercent<10)
+        {
+            Mood_Image.setImageResource(R.drawable.pureneutral)
+        }
+        else if (tipPercent<20)
+        {
+            Mood_Image.setImageResource(R.drawable.slightlyhappy)
+        }
+         else
             {
-            Mood_Image.setImageResource(R.drawable.neutral)
-            }
-        else
-            {
-            Mood_Image.setImageResource(R.drawable.happy_face)
+            Mood_Image.setImageResource(R.drawable.vhappy)
                         }
                              }
     //app:srcCompat="@drawable/happy_face"
