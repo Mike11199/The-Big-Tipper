@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.SeekBar
 import android.widget.TextView
 
-//When you have tagging the tag should be the name of the class name
+//When you have tagging, the tag should be the name of the class name
 private const val TAG = "MainActivity"
 private const val INITIAL_TIP_PERCENT = 15
 
