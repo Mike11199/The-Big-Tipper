@@ -98,6 +98,7 @@ class MainActivity : AppCompatActivity() {
         if (tipPercent<5)
             {
             Mood_Image.setImageResource(R.drawable.mad)
+
             }
         else if (tipPercent<10)
             {
