@@ -1,5 +1,8 @@
 # The-Big-Tipper
-First android app project, following a freeCodeCamp tutorial and adding custom features. 
+First android app project, following a freeCodeCamp tutorial and adding custom features. <br>
+
+
+To install, download the APK (Android Application Package) file named The-Big-Tipper_App File.apk from this repository.  
 
 Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically typed programming language.
 
