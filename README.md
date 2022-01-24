@@ -2,7 +2,7 @@
 First android app project, following a freeCodeCamp tutorial and adding custom features. <br>
 
 
-To install, download the APK (Android Application Package) file named The-Big-Tipper_App File.apk from this repository.  
+To install, download the APK (Android Application Package) file named <strong>The Big Tipper App File.apk</strong> from this repository.  
 
 Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically typed programming language.
 
@@ -12,7 +12,6 @@ Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically 
 
 <br> 
 
-Deviated from tutorial by adding a smiley face that updates from happy, neutral, or angry depending on the tip amount.
+Deviated from tutorial by adding a smiley face that updates its expression between 4 options, depending on the tip amount.
 
-<img src="https://user-images.githubusercontent.com/91037796/150699029-6f465813-ebaf-4cd2-98e6-3e2f4f663e6e.gif" width="324" height="648"/>
-
+<img src="https://github.com/Mike11199/GIFs/blob/a91c59b5ac8056bc5169c0d2ef2e6c3863a86b77/The%20Big%20Tipper.gif" width="324" height="648" />
