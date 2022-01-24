@@ -14,4 +14,4 @@ Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically 
 
 Deviated from tutorial by adding a smiley face that updates from happy, neutral, or angry depending on the tip amount.
 
-<img src="https://user-images.githubusercontent.com/91037796/150702652-ab1ddbf4-2fae-45df-aad4-cbe775f07371.gif" width="324" height="648"/>
+<img src="https://github.com/Mike11199/GIFs/blob/a91c59b5ac8056bc5169c0d2ef2e6c3863a86b77/The%20Big%20Tipper.gif" />
