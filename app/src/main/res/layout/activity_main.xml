@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_list"
+    android:id="@+id/mainLayout"
+    >
+    <!--    These two tags android background and android id set the background as the gradient list from res drawable-->
+
+
 
 
     <!--    views on the left side-->
@@ -100,11 +106,22 @@
     <TextView
         android:id="@+id/tvFooter"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginBottom="32dp"
-        android:text="Made by Michael Iwanek (following freeCodeCamp.org tutorial)"
+        android:layout_height="wrap_content"
+        android:text="Made by Michael Iwanek "
+        app:layout_constraintBottom_toTopOf="@+id/tvFooter2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFooter2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="(referenced two tutorials on YouTube)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
