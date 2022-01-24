@@ -8,7 +8,7 @@ Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically 
 
 <br> 
 
-[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=The%20Big%20Tipper&width=800&height=120)](https://github.com/Akshay090/svg-banners) 
+[![SVG Banners](https://svg-banners.vercel.app/api?type=origin&text1=The%20Big%20Tipper&width=800&height=140)](https://github.com/Akshay090/svg-banners) 
 
 <br> 
 
