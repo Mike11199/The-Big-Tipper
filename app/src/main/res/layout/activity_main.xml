@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/gradient_list"
-    android:id="@+id/mainLayout"
+
     >
     <!--    These two tags android background and android id set the background as the gradient list from res drawable-->
 
@@ -75,7 +74,7 @@
         android:id="@+id/Tip_Seek_Bar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:max="30"
+        android:max="75"
         app:layout_constraintBottom_toBottomOf="@+id/Percent_Label"
         app:layout_constraintStart_toStartOf="@+id/Base_Amount"
         app:layout_constraintTop_toTopOf="@+id/Percent_Label" />

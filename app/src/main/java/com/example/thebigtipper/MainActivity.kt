@@ -50,11 +50,13 @@ class MainActivity : AppCompatActivity() {
 //        This takes the main layout defined in activity main and runs an animation.
 //        Followed animated background tutorial here from practical coding in Java and then wrote down in Kotlin
 
-        val ConstraintLayout: ConstraintLayout = findViewById(R.id.mainLayout)
-        val AnimationDrawable: AnimationDrawable= ConstraintLayout.background as AnimationDrawable
-        AnimationDrawable.setEnterFadeDuration(2500)
-        AnimationDrawable.setExitFadeDuration(5000)
-        AnimationDrawable.start()
+
+//        This was for adding animated gradient backgrounds but was crashing the app for some reason; worked on emulated app
+//        val ConstraintLayout: ConstraintLayout = findViewById(R.id.mainLayout)
+//        val AnimationDrawable: AnimationDrawable= ConstraintLayout.background as AnimationDrawable
+//        AnimationDrawable.setEnterFadeDuration(2500)
+//        AnimationDrawable.setExitFadeDuration(5000)
+//        AnimationDrawable.start()
 
 
 
