@@ -1,5 +1,7 @@
 package com.example.thebigtipper
 
+import android.graphics.Color
+import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
@@ -34,8 +36,13 @@ class MainActivity : AppCompatActivity() {
         Total_Amount=findViewById(R.id.Total_Amount)
         Mood_Image=findViewById(R.id.FaceMood)
 
+
         Tip_Seek_Bar.progress= INITIAL_TIP_PERCENT
         Percent_Label.text = "$INITIAL_TIP_PERCENT%"
+
+        Tip_Seek_Bar.getProgressDrawable().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+        Tip_Seek_Bar.getThumb().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+
 
 
 //        add a listener here. An event listener is a procedure or function in a computer program that waits for an event to occur.
