@@ -2,15 +2,18 @@ package com.example.thebigtipper
 
 import android.graphics.Color
 import android.graphics.PorterDuff
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.util.Log
+import android.view.animation.Animation
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 
 //When you have tagging, the tag should be the name of the class name
 private const val TAG = "MainActivity"
@@ -40,12 +43,26 @@ class MainActivity : AppCompatActivity() {
         Tip_Seek_Bar.progress= INITIAL_TIP_PERCENT
         Percent_Label.text = "$INITIAL_TIP_PERCENT%"
 
-        Tip_Seek_Bar.getProgressDrawable().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
-        Tip_Seek_Bar.getThumb().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN);
+        Tip_Seek_Bar.getProgressDrawable().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN)
+        Tip_Seek_Bar.getThumb().setColorFilter(Color.RED, PorterDuff.Mode.SRC_IN)
+
+
+//        This takes the main layout defined in activity main and runs an animation.
+//        Followed animated background tutorial here from practical coding in Java and then wrote down in Kotlin
+
+        val ConstraintLayout: ConstraintLayout = findViewById(R.id.mainLayout)
+        val AnimationDrawable: AnimationDrawable= ConstraintLayout.background as AnimationDrawable
+        AnimationDrawable.setEnterFadeDuration(2500)
+        AnimationDrawable.setExitFadeDuration(5000)
+        AnimationDrawable.start()
 
 
 
-//        add a listener here. An event listener is a procedure or function in a computer program that waits for an event to occur.
+
+//        This sections adds a listener here. An event listener is a procedure or function in a computer program that waits for an event to occur.
+//        This does a task when the seekbar changes
+
+
         Tip_Seek_Bar.setOnSeekBarChangeListener(object:SeekBar.OnSeekBarChangeListener 
         {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
@@ -53,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 Percent_Label.text= "$progress%"
                 computeTipAndTotal()
                 Update_Mood()
-//                Every time progress is changed on the seekbar you print out the current value shown in logcat
+//                Every time the progress is changed on the seekbar, you print out the current value shown in the logcat pane
             }
 
             override fun onStartTrackingTouch(p0: SeekBar?) {}
