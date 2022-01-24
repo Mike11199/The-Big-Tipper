@@ -14,3 +14,5 @@ Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically 
 
 Deviated from tutorial by adding a smiley face that updates its expression between 4 options, depending on the tip amount.
 
+<img src="https://github.com/Mike11199/GIFs/blob/896a4530b31e4ad13fe9082150370851bba96684/The%20Big%20Tipper.gif" alt="Databay showcase gif" title="Databay showcase gif" width="500"/>
+
