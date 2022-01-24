@@ -16,3 +16,4 @@ Deviated from tutorial by adding a smiley face that updates its expression betwe
 
 <img src="https://github.com/Mike11199/GIFs/blob/896a4530b31e4ad13fe9082150370851bba96684/The%20Big%20Tipper.gif" alt="Databay showcase gif" title="Databay showcase gif" width="350"/>
 
+![The Big Tipper](https://user-images.githubusercontent.com/91037796/150853686-676dda58-0964-4be5-88f3-b970084be350.gif)
