@@ -4,7 +4,7 @@ First android app project, following a freeCodeCamp tutorial and adding custom f
 
 To install, download the APK (Android Application Package) file named <strong>The Big Tipper App File.apk</strong> from this repository.  
 
-Created wtih Android Studio IDE and coded in Kotlin, a Java inspired statically typed programming language.
+Created with Android Studio IDE and coded in Kotlin, a Java inspired statically typed programming language.
 
 <br> 
 
